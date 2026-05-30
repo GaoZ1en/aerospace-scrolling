@@ -1,0 +1,32 @@
+= aerospace-center-column(1)
+include::util/man-attributes.adoc[]
+:manname: aerospace-center-column
+// tag::purpose[]
+:manpurpose: Center the focused column in a scrolling workspace
+// end::purpose[]
+
+// =========================================================== Synopsis
+== Synopsis
+[verse]
+// tag::synopsis[]
+aerospace center-column [-h|--help]
+
+// end::synopsis[]
+
+// =========================================================== Description
+== Description
+
+// tag::body[]
+{manpurpose}
+
+The command is only meaningful when the current workspace root container uses the `scrolling` layout.
+
+// =========================================================== Options
+include::util/conditional-options-header.adoc[]
+
+-h, --help:: Print help
+
+// end::body[]
+
+// =========================================================== Footer
+include::util/man-footer.adoc[]

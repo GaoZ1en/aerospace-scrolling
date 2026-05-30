@@ -1,0 +1,48 @@
+= aerospace-set-column-width(1)
+include::util/man-attributes.adoc[]
+:manname: aerospace-set-column-width
+// tag::purpose[]
+:manpurpose: Set the focused scrolling column width
+// end::purpose[]
+
+// =========================================================== Synopsis
+== Synopsis
+[verse]
+// tag::synopsis[]
+aerospace set-column-width [-h|--help] (reset|<points>|<percent>%|[+|-]<percent>%)
+
+// end::synopsis[]
+
+// =========================================================== Description
+== Description
+
+// tag::body[]
+{manpurpose}
+
+The command changes the width of the focused root-level column in a scrolling workspace.
+The command fails outside a workspace whose root container uses the `scrolling` layout.
+
+// =========================================================== Options
+include::util/conditional-options-header.adoc[]
+
+-h, --help:: Print help
+
+// =========================================================== Arguments
+include::./util/conditional-arguments-header.adoc[]
+
+reset::
+Reset the focused column width to the default scrolling column width.
+
+<points>::
+Set an absolute column width in points.
+
+<percent>%::
+Set column width as a percentage of the visible workspace width.
+
+[+|-]<percent>%::
+Increase or decrease column width by a percentage of the visible workspace width.
+
+// end::body[]
+
+// =========================================================== Footer
+include::util/man-footer.adoc[]

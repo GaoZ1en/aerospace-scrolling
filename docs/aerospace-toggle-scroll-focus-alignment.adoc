@@ -1,0 +1,35 @@
+= aerospace-toggle-scroll-focus-alignment(1)
+include::util/man-attributes.adoc[]
+:manname: aerospace-toggle-scroll-focus-alignment
+// tag::purpose[]
+:manpurpose: Toggle scrolling focus alignment between center, leading, and trailing
+// end::purpose[]
+
+// =========================================================== Synopsis
+== Synopsis
+[verse]
+// tag::synopsis[]
+aerospace toggle-scroll-focus-alignment [-h|--help]
+
+// end::synopsis[]
+
+// =========================================================== Description
+== Description
+
+// tag::body[]
+{manpurpose}
+
+Toggles between two alignment modes for the focused column in a scrolling layout:
+
+- `smart` -- The viewport stays still when the focused column is already visible; scrolls to the left edge only when the column is off-screen (default)
+- `center` -- The focused column is always centered in the viewport
+
+// =========================================================== Options
+include::util/conditional-options-header.adoc[]
+
+-h, --help:: Print help
+
+// end::body[]
+
+// =========================================================== Footer
+include::util/man-footer.adoc[]

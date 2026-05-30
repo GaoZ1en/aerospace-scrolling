@@ -1,0 +1,39 @@
+= aerospace-scroll(1)
+include::util/man-attributes.adoc[]
+:manname: aerospace-scroll
+// tag::purpose[]
+:manpurpose: Scroll a scrolling workspace to an adjacent column
+// end::purpose[]
+
+// =========================================================== Synopsis
+== Synopsis
+[verse]
+// tag::synopsis[]
+aerospace scroll [-h|--help] (left|right)
+
+// end::synopsis[]
+
+// =========================================================== Description
+== Description
+
+// tag::body[]
+{manpurpose}
+
+The command focuses the adjacent column and centers it in the visible workspace.
+The command fails outside a workspace whose root container uses the `scrolling` layout.
+
+// =========================================================== Options
+include::util/conditional-options-header.adoc[]
+
+-h, --help:: Print help
+
+// =========================================================== Arguments
+include::./util/conditional-arguments-header.adoc[]
+
+(left|right)::
+Scroll to the previous or next column.
+
+// end::body[]
+
+// =========================================================== Footer
+include::util/man-footer.adoc[]
